@@ -3,3 +3,5 @@ from django.http import HttpResponse
 
 
 # Create your views here.
+def calendar(request):
+    return render(request, 'calendarapp/calendar.html')
