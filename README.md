@@ -30,7 +30,7 @@ FULLCALENDAR = {
 
 3. calendar.html
 
-```
+```html
 {% load fullcalendar_tags %}
 
 <!DOCTYPE html>
