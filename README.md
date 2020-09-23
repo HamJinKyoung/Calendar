@@ -12,7 +12,7 @@ django-fullcalendar 설치
 
 2. settings.py
 
-```
+```python
 INSTALLED_APPS = [
     'fullcalendar',
 ]
