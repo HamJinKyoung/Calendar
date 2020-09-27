@@ -22,10 +22,6 @@ h1 {
     text-align: center;
 }
 
-.btn-outline-dark {
-    color: #e66b6b;
-}
-
 .month {
     font-size: 1rem;
 }
@@ -72,6 +68,10 @@ h1 {
 
 a {
     transition: color 0.2s;
+}
+
+span {
+    color: black;
 }
 
 a:link {
