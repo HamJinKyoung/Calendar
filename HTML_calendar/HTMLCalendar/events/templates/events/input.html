@@ -1,12 +1,9 @@
 {% extends 'events/base.html' %} {% block content %}
-<div class="container">
-    <br />
-    <form method="POST">
-        {% csrf_token %}
-        <div class="form form-table">
-            {{ form }}
-            <button type="submit" class="btn btn-info right">Submit</button>
-        </div>
-    </form>
-</div>
+<form method="POST">
+    {% csrf_token %}
+    <div class="form form-table">
+        {{ form }}
+        <button type="submit" class="btn btn-mycolor right">저장하기</button>
+    </div>
+</form>
 {% endblock %}

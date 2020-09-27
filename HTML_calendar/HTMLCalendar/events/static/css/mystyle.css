@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Bazzi";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* base.html */
+body {
+    font-family: "Bazzi";
+}
+
+.bg-mycolor {
+    background-color: #dfa295 !important;
+}
+
+.container {
+    padding: 1rem;
+}
+
+/* events.html */
+.my-btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.btn-outline-mycolor {
+    color: #dfa295;
+    border-color: #dfa295;
+}
+.btn:hover {
+    color: #9f5652;
+}
+
+.calendar {
+    width: 70vw;
+    margin: auto;
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 1em;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2), 10px 10px 10px 10px #fff;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2), 10px 10px 10px 10px #fff;
+    color: #8f8785;
+    text-align: center;
+}
+
+.calendar th {
+    padding: 2vw;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.calendar tr {
+    color: #9f5652;
+    font-weight: 1;
+}
+
+.calendar .month {
+    color: #dfa295;
+    font-weight: 3;
+    font-size: 2rem;
+}
+
+.calendar td {
+    color: #201110;
+    width: 1rem;
+    height: 5em;
+    padding: 0 0.25em;
+    transition: background 0.5s;
+    text-align: left;
+}
+
+.calendar td:hover {
+    background: rgba(143, 129, 128, 0.2);
+    border-radius: 0.5em;
+    color: #9f5652;
+}
+
+.event_line {
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.event_line a {
+    transition: color 0.2s;
+}
+
+.event_line a:link {
+    color: #402321;
+    text-decoration: none;
+}
+
+.event_line a:visited {
+    color: #402321;
+    text-decoration: none;
+}
+
+.event_line a:hover {
+    color: #9f5652;
+    text-decoration: none;
+}
+
+/* input.html */
+.form {
+    margin: auto;
+}
+
+.form input,
+.form select,
+.form textarea {
+    border-radius: 5px;
+    border: 1px solid #dfa295;
+    outline: none;
+    background: none;
+    padding: 5px;
+    width: 100%;
+}
+
+.btn-mycolor {
+    background-color: #dfa295;
+    color: #201110;
+}
+
+.btn {
+    margin: 1rem;
+}
