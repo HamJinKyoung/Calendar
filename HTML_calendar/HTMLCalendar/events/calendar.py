@@ -10,7 +10,8 @@ class Calendar(HTMLCalendar):
 
 	# '일'을 td 태그로 변환하고 이벤트를 '일'순으로 필터
 	def formatday(self, day, events):
-		events_per_day = events.filter(start_time__day=day)
+		# events_per_day = events.filter(start_time__day=day)
+		events_per_day = events.filter(date__day=day)
 		d = ''
 		for event in events_per_day:
 			d += f'<li> {event.get_html_url} </li>'
@@ -29,7 +30,8 @@ class Calendar(HTMLCalendar):
 	# '월'을 테이블 태그로 변환
 	# 각 '월'과 '연'으로 이벤트 필터
 	def formatmonth(self, withyear=True):
-		events = Event.objects.filter(start_time__year=self.year, start_time__month=self.month)
+		# events = Event.objects.filter(start__year=self.year, start_time__month=self.month)
+		events = Event.objects.filter(date__year=self.year, date__month=self.month)
 
 		cal = f'<table class="calendar">\n'
 		cal += f'{self.formatmonthname(self.year, self.month, withyear=withyear)}\n'
